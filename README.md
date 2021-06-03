@@ -10,7 +10,7 @@ node mail.mjs mail.create --new-mail 1 --api $(cat api.txt)
 node mail.mjs mail.send --user strmanolo@gmail.com --password '**********' --to dce9e7d6-ce6b-4b59-a6c8-2660bf4ca2b1@mailslurp.com --subject test --message-file ./myMessage.txt
 ```
 
-##### Send mail from slurp to gamil (or other provider)
+##### Send mail from slurp to gmail (or other provider)
 ```bash
 node mail.mjs mail.send --to strmanolo@gmail.com --message Hola --api $(cat api.txt) --use-slurpt
 ```
