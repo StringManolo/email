@@ -6,7 +6,7 @@
 * filetype -> ES6 module
 * description -> mail.mjs is a cli tool to send emails using any email providder and create/send/read/delete emails using slurp API.
 * summary -> Emails directly from CLI.
-* sourceLink -> https://github.com/StringManolo/docu/blob/master/mail.mjs
+* sourceLink -> https://github.com/StringManolo/email/blob/master/mail.mjs
 * dependency -> node https://node.org,nodemailer https://github.com/nodemailer/nodemailer,mailslurp-client https://github.com/mailslurp/mailslurp-client
 */
 

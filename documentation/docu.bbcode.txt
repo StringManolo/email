@@ -17,7 +17,7 @@ Emails directly from CLI.
 [/list]
 
 
-[size=11pt][b][i]function[/i] [b]loadFile[/b]  [url=https://github.com/StringManolo/docu/blob/master/mail.mjs#L26]26[/url][/b][/size]
+[size=11pt][b][i]function[/i] [b]loadFile[/b]  [url=https://github.com/StringManolo/email/blob/master/mail.mjs#L26]26[/url][/b][/size]
 Get file contents from a file
 Argument: [b]filename[/b] [i]String[/i]   Path to the file
 Return: [b]filename[/b] [i]String[/i]   File contents
@@ -27,21 +27,21 @@ ${myFile}
 `);[/code]
 
 
-[size=11pt][b][i]function[/i] [b]getline[/b]  [url=https://github.com/StringManolo/docu/blob/master/mail.mjs#L41]41[/url][/b][/size]
+[size=11pt][b][i]function[/i] [b]getline[/b]  [url=https://github.com/StringManolo/email/blob/master/mail.mjs#L41]41[/url][/b][/size]
 Ask for input from CLI
 Return: [b]rtnval[/b] [i]String[/i]   Input text
 [code=javascript]console.log("Hello user, give me a number");
 const userNumber = getline();[/code]
 
 
-[size=11pt][b][i]function[/i] [b]output[/b]  [url=https://github.com/StringManolo/docu/blob/master/mail.mjs#L62]62[/url][/b][/size]
+[size=11pt][b][i]function[/i] [b]output[/b]  [url=https://github.com/StringManolo/email/blob/master/mail.mjs#L62]62[/url][/b][/size]
 Output text to the console without line break at the end.
 Argument: [b]args[/b] [i]String[/i]   Text to log
 Return: [i]undefined[/i] 
 [code=javascript]output("Write your name here[/code]
 
 
-[size=11pt][b][i]function[/i] [b]open[/b]  [url=https://github.com/StringManolo/docu/blob/master/mail.mjs#L73]73[/url][/b][/size]
+[size=11pt][b][i]function[/i] [b]open[/b]  [url=https://github.com/StringManolo/email/blob/master/mail.mjs#L73]73[/url][/b][/size]
 Mimics C style open
 Argument: [b]filename[/b] [i]String[/i]   Path to the file
 Argument: [b]mode[/b] [i]String[/i]   Operation mode ("r", "w", "a")
@@ -51,14 +51,14 @@ fd.puts("Hello!");
 fd.close();[/code]
 
 
-[size=11pt][b][i]function[/i] [b]parseCli[/b]  [url=https://github.com/StringManolo/docu/blob/master/mail.mjs#L93]93[/url][/b][/size]
+[size=11pt][b][i]function[/i] [b]parseCli[/b]  [url=https://github.com/StringManolo/email/blob/master/mail.mjs#L93]93[/url][/b][/size]
 Get user argmuents from CLI
 Return: [b]obj[/b] [i]Object[/i]   Object holding parsed arguments as properties
 [code=javascript]const cli = parseCli();
 console.log(`The user provided password is ${cli.password}`);[/code]
 
 
-[size=11pt][b][i]function[/i] [b]checkIfMandatoryArgumentsAreSet[/b]  [url=https://github.com/StringManolo/docu/blob/master/mail.mjs#L221]221[/url][/b][/size]
+[size=11pt][b][i]function[/i] [b]checkIfMandatoryArgumentsAreSet[/b]  [url=https://github.com/StringManolo/email/blob/master/mail.mjs#L221]221[/url][/b][/size]
 Check if all mandatory arguments are set
 Argument: [b]obj[/b] [i]Object[/i]   Object holding the cli properties to check
 Return: [b]bool[/b] [i]Bool[/i]   Return true if all mandatory args set, else return undefined
@@ -70,14 +70,14 @@ if (checkIfMandatoryArgumentsAreSet(cli)) {
 }[/code]
 
 
-[size=11pt][b][i]function[/i] [b]sendEmail[/b]  [url=https://github.com/StringManolo/docu/blob/master/mail.mjs#L276]276[/url][/b][/size]
+[size=11pt][b][i]function[/i] [b]sendEmail[/b]  [url=https://github.com/StringManolo/email/blob/master/mail.mjs#L276]276[/url][/b][/size]
 Send a new email
 Argument: [b]obj[/b] [i]Object[/i]   All mandatory options
 Return: [i]undefined[/i] 
 [code=javascript]sendEmail(cli);[/code]
 
 
-[size=11pt][b][i]function[/i] [b]receiveEmail[/b]  [url=https://github.com/StringManolo/docu/blob/master/mail.mjs#L341]341[/url][/b][/size]
+[size=11pt][b][i]function[/i] [b]receiveEmail[/b]  [url=https://github.com/StringManolo/email/blob/master/mail.mjs#L341]341[/url][/b][/size]
 Read inbox and emails
 Argument: [b]obj[/b] [i]Object[/i]   All mandatory options
 Return: [i]undefined[/i] 
