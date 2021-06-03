@@ -12,7 +12,7 @@ Emails directly from CLI.
 - [mailslurp-client](https://github.com/mailslurp/mailslurp-client)  
   
   
-##### _function_ **loadFile**  [26](https://github.com/StringManolo/email/blob/master/mail.mjs#L26)  
+##### _function_ **loadFile**  [27](https://github.com/StringManolo/email/blob/master/mail.mjs#L27)  
 Get file contents from a file  
 Argument: **filename** _String_   Path to the file  
 Return: **filename** _String_   File contents  
@@ -24,7 +24,7 @@ ${myFile}
 ```  
   
   
-##### _function_ **getline**  [41](https://github.com/StringManolo/email/blob/master/mail.mjs#L41)  
+##### _function_ **getline**  [42](https://github.com/StringManolo/email/blob/master/mail.mjs#L42)  
 Ask for input from CLI  
 Return: **rtnval** _String_   Input text  
 ```javascript
@@ -33,7 +33,7 @@ const userNumber = getline();
 ```  
   
   
-##### _function_ **output**  [62](https://github.com/StringManolo/email/blob/master/mail.mjs#L62)  
+##### _function_ **output**  [63](https://github.com/StringManolo/email/blob/master/mail.mjs#L63)  
 Output text to the console without line break at the end.  
 Argument: **args** _String_   Text to log  
 Return: _undefined_   
@@ -42,7 +42,7 @@ output("Write your name here
 ```  
   
   
-##### _function_ **open**  [73](https://github.com/StringManolo/email/blob/master/mail.mjs#L73)  
+##### _function_ **open**  [74](https://github.com/StringManolo/email/blob/master/mail.mjs#L74)  
 Mimics C style open  
 Argument: **filename** _String_   Path to the file  
 Argument: **mode** _String_   Operation mode ("r", "w", "a")  
@@ -54,7 +54,7 @@ fd.close();
 ```  
   
   
-##### _function_ **parseCli**  [93](https://github.com/StringManolo/email/blob/master/mail.mjs#L93)  
+##### _function_ **parseCli**  [94](https://github.com/StringManolo/email/blob/master/mail.mjs#L94)  
 Get user argmuents from CLI  
 Return: **obj** _Object_   Object holding parsed arguments as properties  
 ```javascript
@@ -63,7 +63,7 @@ console.log(`The user provided password is ${cli.password}`);
 ```  
   
   
-##### _function_ **checkIfMandatoryArgumentsAreSet**  [221](https://github.com/StringManolo/email/blob/master/mail.mjs#L221)  
+##### _function_ **checkIfMandatoryArgumentsAreSet**  [222](https://github.com/StringManolo/email/blob/master/mail.mjs#L222)  
 Check if all mandatory arguments are set  
 Argument: **obj** _Object_   Object holding the cli properties to check  
 Return: **bool** _Bool_   Return true if all mandatory args set, else return undefined  
@@ -77,7 +77,7 @@ if (checkIfMandatoryArgumentsAreSet(cli)) {
 ```  
   
   
-##### _function_ **sendEmail**  [276](https://github.com/StringManolo/email/blob/master/mail.mjs#L276)  
+##### _function_ **sendEmail**  [277](https://github.com/StringManolo/email/blob/master/mail.mjs#L277)  
 Send a new email  
 Argument: **obj** _Object_   All mandatory options  
 Return: _undefined_   
@@ -86,7 +86,7 @@ sendEmail(cli);
 ```  
   
   
-##### _function_ **receiveEmail**  [341](https://github.com/StringManolo/email/blob/master/mail.mjs#L341)  
+##### _function_ **receiveEmail**  [342](https://github.com/StringManolo/email/blob/master/mail.mjs#L342)  
 Read inbox and emails  
 Argument: **obj** _Object_   All mandatory options  
 Return: _undefined_   

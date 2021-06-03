@@ -1,8 +1,9 @@
+#!/usr/bin/env node
 /* This commentaries are made by hand to be processed by https://github.com/StringManolo/docu */
 
 /* lang -> javascript
 * name -> mail
-* title -> MAIL - Documentation
+* title -> MAIL - Documntation
 * filetype -> ES6 module
 * description -> mail.mjs is a cli tool to send emails using any email providder and create/send/read/delete emails using slurp API.
 * summary -> Emails directly from CLI.

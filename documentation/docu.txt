@@ -15,7 +15,7 @@
      * [2]nodemailer
      * [3]mailslurp-client
 
-      function loadFile [4]26
+      function loadFile [4]27
 
    Get file contents from a file
    Argument: filename String Path to the file
@@ -25,21 +25,21 @@ console.log(`File contents:
 ${myFile}
 `);
 
-      function getline [5]41
+      function getline [5]42
 
    Ask for input from CLI
    Return: rtnval String Input text
 console.log("Hello user, give me a number");
 const userNumber = getline();
 
-      function output [6]62
+      function output [6]63
 
    Output text to the console without line break at the end.
    Argument: args String Text to log
    Return: undefined
 output("Write your name here
 
-      function open [7]73
+      function open [7]74
 
    Mimics C style open
    Argument: filename String Path to the file
@@ -49,14 +49,14 @@ const fd = open("myFile.txt", "w");
 fd.puts("Hello!");
 fd.close();
 
-      function parseCli [8]93
+      function parseCli [8]94
 
    Get user argmuents from CLI
    Return: obj Object Object holding parsed arguments as properties
 const cli = parseCli();
 console.log(`The user provided password is ${cli.password}`);
 
-      function checkIfMandatoryArgumentsAreSet [9]221
+      function checkIfMandatoryArgumentsAreSet [9]222
 
    Check if all mandatory arguments are set
    Argument: obj Object Object holding the cli properties to check
@@ -70,14 +70,14 @@ if (checkIfMandatoryArgumentsAreSet(cli)) {
 uments
 }
 
-      function sendEmail [10]276
+      function sendEmail [10]277
 
    Send a new email
    Argument: obj Object All mandatory options
    Return: undefined
 sendEmail(cli);
 
-      function receiveEmail [11]341
+      function receiveEmail [11]342
 
    Read inbox and emails
    Argument: obj Object All mandatory options
@@ -85,12 +85,13 @@ sendEmail(cli);
 receiveEmail(cli);
 
    Source:
+#!/usr/bin/env node
 /* This commentaries are made by hand to be processed by https://github.com/Stri
 ngManolo/docu */
 
 /* lang -> javascript
 * name -> mail
-* title -> MAIL - Documentation
+* title -> MAIL - Documntation
 * filetype -> ES6 module
 * description -> mail.mjs is a cli tool to send emails using any email providder
  and create/send/read/delete emails using slurp API.
@@ -543,11 +544,11 @@ References
    1. https://node.org/
    2. https://github.com/nodemailer/nodemailer
    3. https://github.com/mailslurp/mailslurp-client
-   4. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L26
-   5. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L41
-   6. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L62
-   7. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L73
-   8. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L93
-   9. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L221
-  10. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L276
-  11. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L341
+   4. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L27
+   5. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L42
+   6. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L63
+   7. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L74
+   8. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L94
+   9. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L222
+  10. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L277
+  11. file:///data/data/com.termux/files/usr/PROGRAMS/node/email/documentation/docu.html#L342
